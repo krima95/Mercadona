@@ -2,11 +2,11 @@ footer {
     margin-top: 8px;
     display: flex;
     align-items: center;
-    line-height: 20px;
+    line-height: 10px;
     background-color: aqua;
   }
 
-  footer a {
+  a {
     display: flex;
     align-items: center;
   }

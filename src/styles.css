@@ -7,14 +7,24 @@ body {
     font-size: 14px;
     box-sizing: border-box;
     margin: 0;
+    color: #133314;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin: 8px 0;
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0;
+}
 
-  p {
-    margin: 0;
-  }
+p {
+  margin: 0;
+}
+
+ a {
+  color: #133314;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  } 
+}
 
  
