@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title='Promotions en cours';
-
+  
 }
 

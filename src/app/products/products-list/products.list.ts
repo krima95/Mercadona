@@ -1,10 +1,12 @@
+// Mock de produits
+
 export const products =  [
     {
     id: 1,
     title: 'Pommes',
     type: 'Fruit',
     description: 'Pommes de la région de la Rioja',
-    imgageURL: 'src/assets/fruits/pommes.jpg',
+    imgageURL: "../../assets/fruits/pommes.jpg",
     price: 2.5,
     },
     {
@@ -12,7 +14,7 @@ export const products =  [
     title: 'Bananes',
     type: 'Fruit',
     description: 'Bananes des îles Canaries',
-    img:'../../assets/fruits/bananes.jpg',
+    imgageURL: "../../assets/fruits/bananes.jpg",
     price: 1.99,
     },
     {
@@ -20,7 +22,7 @@ export const products =  [
     title: 'Oranges',
     type: 'Fruit',
     description: 'Oranges de Valence',
-    img:'../../assets/fruits/oranges.jpg',
+    imgageURL: "../../assets/fruits/oranges.jpg",
     price: 3.5,
     },
     {
@@ -28,7 +30,7 @@ export const products =  [
     title: 'Citrons',
     type: 'Fruit',
     description: 'Citrons de Murcie',
-    img:'../../assets/fruits/citrons.jpg',
+    imgageURL: "../../assets/fruits/cirtrons.jpg",
     price: 3.49,
     },
     {
@@ -36,7 +38,7 @@ export const products =  [
     title: 'Fraises',
     type: 'Fruit',
     description: 'Fraises de Huelva',
-    img:'../../assets/fruits/fraises.jpg',
+    imgageURL:'../../assets/fruits/fraises.jpg',
     price: 4.99,
     },
     {
@@ -44,7 +46,7 @@ export const products =  [
     title: 'Pastèque',
     type: 'Fruit',
     description: 'Pastèque de Murcie',
-    img:'../../assets/fruits/pasteque.jpg',
+    imgageURL:'../../assets/fruits/pasteque.jpg',
     price: 3.49,
     },
     {
@@ -52,7 +54,7 @@ export const products =  [
     title: 'Raisin',
     type: 'Fruit',
     description: 'Raisin de la Rioja',
-    img:'../../assets/fruits/raisin.jpg',
+    imgageURL:'../../assets/fruits/raisin.jpg',
     price: 2.5,
     },
 ] 
