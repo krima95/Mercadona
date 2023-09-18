@@ -30,7 +30,7 @@ export const products =  [
     title: 'Citrons',
     type: 'Fruit',
     description: 'Citrons de Murcie',
-    imgageURL: "../../assets/fruits/cirtrons.jpg",
+    imgageURL: "../../assets/fruits/citrons.jpg",
     price: 3.49,
     },
     {

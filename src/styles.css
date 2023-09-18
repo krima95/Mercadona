@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    /* box-sizing: border-box; */
-    margin: 0; 
-    color: #133314;
+* {
+    font-family: 'Cabin', sans-serif;
 }
 
-/* changer la couleur du mat-tab-group 'Accéder au catalogue'  */
+body {
+    background: rgba(216, 238, 233, 0.527);
+    color: #133314;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    
+}
+
+/* changer la couleur du mat-tab-group 'Notre catalogue'  */
 .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
 --mdc-tab-indicator-active-indicator-color: #fff;
 --mat-tab-header-disabled-ripple-color: rgba(255, 255, 255, 0.5);
