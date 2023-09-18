@@ -1,12 +1,9 @@
 footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 10px;
-    background-color: aqua;
+    background-color: #4CAF50;
+    text-align: center;
+    
   }
 
-  a {
-    display: flex;
-    align-items: center;
+  p {
+    font-size: 12px;
   }

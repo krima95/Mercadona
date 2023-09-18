@@ -4,7 +4,7 @@ export const products =  [
     title: 'Pommes',
     type: 'Fruit',
     description: 'Pommes de la région de la Rioja',
-    img:'../../assets/fruits/pommes.jpg',
+    imgageURL: 'src/assets/fruits/pommes.jpg',
     price: 2.5,
     },
     {

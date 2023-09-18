@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { products } from './products.list'
 
 
-// export interface products {
-//   title: string;
-//   type: string;
-//   description: string;
-//   img: any;
-//   price: number;
-// }
+
+export interface products {
+  title: string;
+  type: string;
+  description: string;
+  img: string;
+  price: number;
+}
+
 
 
 @Component({
@@ -19,15 +21,18 @@ import { products } from './products.list'
 })
 export class ProductsListComponent implements OnInit {
 
-  productsList = []
-  displayedColumns: string[] = ['title', 'type', 'description', 'img', 'price'];
+  productsList = products;
+  displayedColumns: string[] = ['title', 'type', 'description', 'imgageURL', 'price'];
   dataSource = products;
-  
+ 
 
   constructor() { }
 
   ngOnInit(): void {
-    // productsList = products
+   
   }
 
 }
+
+
+
