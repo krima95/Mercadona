@@ -8,8 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
+
 import { FormsModule } from '@angular/forms'
 import { CommonModule } from '@angular/common';
+
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,6 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     CommonModule
   
-
     
   ],
   providers: [],
