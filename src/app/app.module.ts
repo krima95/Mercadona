@@ -9,10 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 
-import { FormsModule } from '@angular/forms'
-import { CommonModule } from '@angular/common';
-
-
 
 
 @NgModule({
@@ -30,8 +26,7 @@ import { CommonModule } from '@angular/common';
     BrowserAnimationsModule,
     ProductsModule,
     MatListModule,
-    FormsModule,
-    CommonModule
+    
   
     
   ],
