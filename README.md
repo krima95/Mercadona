@@ -1,27 +1,53 @@
-# Mercadona
+# Projet Mercadona - Application Web de Gestion des Promotions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+**Auteur :** Karima El atlassi
+**Dernière mise à jour :** 19/09/2023
 
-## Development server
+Ce projet consiste en le développement d'une application web pour gérer les promotions des produits de Mercadona. L'objectif est de remplacer les tracts papier par une solution numérique plus respectueuse de l'environnement.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Fonctionnalités
 
-## Code scaffolding
+- Consultation des promotions en cours.
+- Authentification des administrateurs.
+- Ajout de promotions sur des produits.
+- Gestion des produits avec libellé, description, prix, image et catégorie.
+- Affichage des produits par catégorie.
+- Calcul automatique du nouveau prix lors de la création d'une promotion.
+- Mise en évidence des produits en promotion.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Utilisées
 
-## Build
+- Front-end : Angular
+- Back-end : Django (Python)
+- Base de données : PostgreSQL
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. Clonez ce dépôt : `git clone lien_vers_le_depot.git`
+2. Accédez au répertoire du projet : `cd nom_du_projet`
+3. Installez les dépendances : `npm install` pour le front-end, et suivez les instructions de votre backend pour l'installation des dépendances Python.
+4. Configurez votre base de données PostgreSQL.
+5. Lancez l'application front-end : `ng serve` (assurez-vous que votre backend est en cours d'exécution).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Configuration
 
-## Running end-to-end tests
+Pour configurer votre application, vous devez définir certaines variables d'environnement, notamment les informations de la base de données et les clés d'API (si nécessaire). Consultez le fichier `config.js` pour plus de détails.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Utilisation
 
-## Further help
+1. Accédez à l'application dans votre navigateur : `http://localhost:4200`.
+2. Connectez-vous en tant qu'administrateur pour gérer les promotions.
+3. Explorez les promotions en cours et les produits disponibles.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Captures d'écran
+
+![Page d'accueil](lien_vers_capture1.png)
+![Page d'administration](lien_vers_capture2.png)
+
+## Contributions
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez consulter notre guide de contribution [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licence
+
+Ce projet est sous licence MIT. Pour plus d'informations, consultez le fichier [LICENSE.md](LICENSE.md).
