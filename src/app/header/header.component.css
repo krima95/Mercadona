@@ -15,6 +15,7 @@ img {
   margin: 2px;
   flex-grow: 1; 
   border-radius: 50%;
+  border : 2px solid #e5f500;
 } 
 
 .headerText {

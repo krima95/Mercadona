@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from './products.list'
 
+
 @Component({
   selector: 'app-products-list',
   templateUrl: './products-list.component.html',
@@ -10,7 +11,7 @@ import { products } from './products.list'
 export class ProductsListComponent implements OnInit {
   products: any[] = [];
   
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.products = products;

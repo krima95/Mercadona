@@ -10,11 +10,12 @@ export class HomeComponent implements OnInit{
   
   title = 'Mercadona est soucieuse de l\'environnement';
   aboutMercadona: string = '';
-
+  
   constructor() { }
 
   ngOnInit(): void {
     this.aboutMercadona = aboutMercadona;
+    
   }
 }
 

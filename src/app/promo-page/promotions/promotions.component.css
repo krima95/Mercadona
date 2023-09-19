@@ -1,0 +1,53 @@
+.message {
+    color: #C70012;
+    text-align: center !important;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    grid-row-gap: 5px;
+}
+  
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+.card-body:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  
+.card-body img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+  
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.card-text {
+    font-size: 0.8rem;
+    color: #777;
+}
+.card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #C70012;
+}

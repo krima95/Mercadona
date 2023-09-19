@@ -1,12 +1,12 @@
-<p class="message">En promotion actuellement !</p>
+<!-- Affichage des produits -->
 
 <div class="card-container" >
-  <div *ngFor = "let product of products" >
-    <div class="card-body">
-      <h5 class="card-title">{{product.title}}</h5>
-      <p class="card-text">{{product.description}}</p>
-      <p class="card-price">{{product.price}} €/kg</p>
-      <img src="{{product.imgageURL}}" alt="{{product.title}}">
-    </div>
+  <div *ngFor = "let product of products">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <p class="card-price">{{product.price | currency:'EUR'}}</p>
+        <img src="{{product.imgageURL}}" alt="{{product.title}}">
+      </div>
   </div>
 </div>

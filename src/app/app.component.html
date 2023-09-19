@@ -1,12 +1,18 @@
 
-<app-header></app-header>
-<app-home></app-home>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-header/>
+<app-home/>
+<router-outlet/>
+<app-footer/>
 
 
-  
+ <!-- exo  -->
 
- 
+<input type="text" [(ngModel)]='product'> 
+product={{product}}
 
- 
+<div *ngIf="product!=0">
+    <button>Get Products</button>
+</div>
+<div *ngIf="product==0">
+    <button>No Products</button>
+</div>
