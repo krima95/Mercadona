@@ -6,7 +6,7 @@
 body {
     background: rgba(216, 238, 233, 0.527);
     color: #133314;
-    margin: 0;
+    margin: 0 15px 0 15px;
     padding: 0;
     line-height: 1.6;
     font-size: 1rem;

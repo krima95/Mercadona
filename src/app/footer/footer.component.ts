@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-footer',
@@ -8,3 +11,4 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   currentYear: number = new Date().getFullYear();
 }
+
