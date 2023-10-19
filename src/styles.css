@@ -13,7 +13,7 @@ body {
     
 }
 
-/* changer la couleur du mat-tab-group 'Notre catalogue'  */
+/* changer la couleur du mat-tab-group */
 .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
 --mdc-tab-indicator-active-indicator-color: #fff;
 --mat-tab-header-disabled-ripple-color: rgba(255, 255, 255, 0.5);
