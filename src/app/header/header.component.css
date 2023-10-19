@@ -3,8 +3,6 @@
   align-items: center;
   background: linear-gradient(180deg,  #e5f500, #4CAF50);
   font-weight: bolder;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 p {
   margin:0;
