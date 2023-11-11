@@ -1,12 +1,14 @@
-<!-- Affichage des produits -->
+<!-- Affichage des produits *ngFor = "let product of products"--> 
 
-<div class="card-container" >
-  <div *ngFor = "let product of products">
+<div class="card-container">
+  <div *ngFor="let product of productsWithoutPromotion">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title">{{product.title}}</h5>
-        <p class="card-text">{{product.description}}</p>
-        <p class="card-price">{{product.price | currency:'EUR'}}</p>
-        <img src="{{product.imgageURL}}" alt="{{product.title}}">
+        <h5 class="card-title">{{ product.product_title }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <p class="card-price bold-price">{{ formatPrice(product.price) }}</p>
+        <img src="{{ product.image }}" alt="{{ product.product_title }}">
       </div>
+    </div>
   </div>
 </div>

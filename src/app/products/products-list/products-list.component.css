@@ -2,11 +2,12 @@
 
 .card-container {
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px); /* Hauteur fixe de 200 pixels pour chaque ligne */
+  grid-template-columns: repeat(5, 1fr); /* Deux colonnes égales */
   grid-gap: 5px;
   grid-row-gap: 5px;
 }
+
 
 .card-body {
   display: flex;
@@ -24,10 +25,10 @@
 }
 
 .card-body img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .card-title {
@@ -45,4 +46,7 @@
   font-weight: bold;
   margin: 0;
   color: #136313;
+}
+.bold-price {
+  font-weight: bold;
 }

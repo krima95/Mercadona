@@ -9,10 +9,9 @@
   <div>
     <mat-nav-list>
       <div>
-        <a mat-list-item routerLink="/products" routerLinkActive="active">Notre catalogue</a>
-        <a mat-list-item routerLink="/" routerLinkActive="active">Nos promotions</a>
+        <a mat-list-item routerLink="/products" routerLinkActive="active" *ngIf="currentUrl !== '/products'">Notre catalogue</a>
+        <a mat-list-item routerLink="/" routerLinkActive="active" *ngIf="currentUrl !== '/'">Nos promotions</a>
       </div>
     </mat-nav-list>
   </div>
-  
-</div> 
+</div>
