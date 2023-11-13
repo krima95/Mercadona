@@ -34,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http'
     CommonModule,
     HttpClientModule,
     PromoPageModule,
+    ProductsModule,
   
     
   ],

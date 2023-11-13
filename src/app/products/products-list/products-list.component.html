@@ -1,12 +1,16 @@
-<!-- Affichage des produits *ngFor = "let product of products"--> 
+<!-- Affichage des produits *ngFor="let product of products" -->
 
 <div class="card-container">
-  <div *ngFor="let product of productsWithoutPromotion">
+  <div *ngFor="let product of products">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">{{ product.product_title }}</h5>
         <p class="card-text">{{ product.description }}</p>
-        <p class="card-price bold-price">{{ formatPrice(product.price) }}</p>
+        <p class="card-price bold-price">
+          Prix : 
+          <span *ngIf="product.en_promotion; else normalPrice" class="promotion">{{ formatPrice(product.sale_price) }}</span>
+          <ng-template #normalPrice>{{ formatPrice(product.price || 0) }}</ng-template>
+        </p>
         <img src="{{ product.image }}" alt="{{ product.product_title }}">
       </div>
     </div>

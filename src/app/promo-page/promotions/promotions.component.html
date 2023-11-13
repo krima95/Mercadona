@@ -6,10 +6,12 @@
       <div class="card-body">
         <h5 class="card-title">{{ product.product_title }}</h5>
         <p class="card-text">{{ product.description }}</p>
-        <p class="card-price bold-price">{{ formatPrice(product.sale_price) }}</p>
-        <img src="{{ product.image }}" alt="{{ product.product_title }}">
+        <p *ngIf="getProductStartDate(product) && getProductEndDate(product)" class="card-date">
+          En promotion du {{ getProductStartDate(product) | date: 'dd/MM/yyyy' }} au {{ getProductEndDate(product) | date: 'dd/MM/yyyy' }}
+        </p>
+        <p class="card-price">{{ formatPrice(product.sale_price) }}</p>
+        <img [src]="product.image" [alt]="product.product_title">
       </div>
     </div>
   </div>
 </div>
-
