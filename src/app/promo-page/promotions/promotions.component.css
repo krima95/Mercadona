@@ -13,6 +13,17 @@
     grid-row-gap: 5px;
 }
   
+.card-container-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+ }
+  
+  .card {
+    box-sizing: border-box;
+    min-height: auto;
+ }
+
 .card-body {
     display: flex;
     flex-direction: column;

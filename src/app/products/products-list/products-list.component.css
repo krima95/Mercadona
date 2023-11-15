@@ -1,13 +1,53 @@
+/* Filtre par catégorie */
+.category-filter-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.category-dropdown {
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #4caf50; /* Couleur verte de succès */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
 
+.filter-button {
+  background-color: #4caf50; /* Couleur verte de succès */
+  color: #fff;
+  border: 1px solid #4caf50;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-button:hover {
+  background-color: #45a049; /* Teinte légèrement plus foncée au survol */
+  border: 1px solid #45a049;
+}
+
+/* Styles pour la carte de produit */
 .card-container {
   display: grid;
-  grid-template-rows: repeat(3, 200px); /* Hauteur fixe de 200 pixels pour chaque ligne */
-  grid-template-columns: repeat(5, 1fr); /* Deux colonnes égales */
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-row-gap: 5px;
 }
 
+.card-container-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  box-sizing: border-box;
+  min-height: auto;
+}
 
 .card-body {
   display: flex;
@@ -16,12 +56,13 @@
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition douce */
 }
 
 .card-body:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 128, 0, 0.5); /* Couleur verte de succès au survol */
 }
 
 .card-body img {
@@ -41,12 +82,14 @@
   font-size: 0.8rem;
   color: #777;
 }
+
 .card-price {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
   color: #136313;
 }
+
 .bold-price {
   font-weight: bold;
 }

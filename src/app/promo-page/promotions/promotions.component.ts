@@ -22,7 +22,7 @@ export class PromotionsComponent implements OnInit {
         this.fetchPromotions().subscribe(
           (promotions: any[]) => {
             this.productsWithPromotion = this.mergeProductsAndPromotions(products, promotions);
-            console.log(this.productsWithPromotion); // Vérifiez ici
+            console.log(this.productsWithPromotion); 
             this.productsWithPromotion = this.productsWithPromotion.filter(product => product.en_promotion);
           },
           (error) => {

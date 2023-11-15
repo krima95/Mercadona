@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -18,25 +19,22 @@ export class DataService {
     return this.http.get<any[]>(`${this.apiUrl}products/promotions/?format=json`);
   }
 
+  getCategories(): Observable<any[]> {
+    // Modification ici pour récupérer uniquement les catégories
+    return this.http.get<any[]>(`${this.apiUrl}products/products/?format=json`).pipe(
+      map(products => products.map(product => product.category))
+    );
+  }
+
   mergeProductsAndPromotions(): Observable<any[]> {
-    return new Observable(observer => {
-      let products: any[];
-      let promotions: any[];
-
-      this.getProducts().subscribe(data => {
-        products = data;
-
-        this.getPromotions().subscribe(data => {
-          promotions = data;
-
-          for (let product of products) {
-            product.en_promotion = promotions.some(promotion => promotion.product === product.id);
-          }
-
-          observer.next(products);
-          observer.complete();
-        });
-      });
-    });
+    return forkJoin([this.getProducts(), this.getPromotions()]).pipe(
+      map(([products, promotions]) => {
+        const productsWithPromotion = products.map(product => ({
+          ...product,
+          en_promotion: promotions.some(promotion => promotion.product === product.id)
+        }));
+        return productsWithPromotion;
+      })
+    );
   }
 }

@@ -1,7 +1,17 @@
-<!-- Affichage des produits *ngFor="let product of products" -->
+<!-- Filtre par catégorie -->
+<form (ngSubmit)="filterByCategory()" class="category-filter-form">
+  <select id="categoryFilter" [(ngModel)]="selectedCategoryId" name="categoryFilter" class="category-dropdown">
+    <option value="">Toutes les catégories</option>
+    <option *ngFor="let category of categories" [value]="category.id">
+      {{ category.category_title }}
+    </option>
+  </select>
+  <button type="submit" class="btn btn-outline-primary btn-sm filter-button">Filtrer</button>
+</form>
 
-<div class="card-container">
-  <div *ngFor="let product of products">
+<!-- Affichage de tous les produits -->
+<div class="card-container-row">
+  <div *ngFor="let product of filteredProducts">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">{{ product.product_title }}</h5>
@@ -11,7 +21,7 @@
           <span *ngIf="product.en_promotion; else normalPrice" class="promotion">{{ formatPrice(product.sale_price) }}</span>
           <ng-template #normalPrice>{{ formatPrice(product.price || 0) }}</ng-template>
         </p>
-        <img src="{{ product.image }}" alt="{{ product.product_title }}">
+        <img [src]="product.image" [alt]="product.product_title">
       </div>
     </div>
   </div>
