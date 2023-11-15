@@ -41,7 +41,9 @@ Pour configurer votre application, vous devez définir certaines variables d'env
 
 ## Captures d'écran
 
-![Page d'accueil](lien_vers_capture1.png)
+![Accueil](https://github.com/krima95/Mercadona/assets/16536957/712a0219-5201-40cd-8f6a-b879cbce3e10)
+
+
 ![Page d'administration](lien_vers_capture2.png)
 
 ## Contributions
