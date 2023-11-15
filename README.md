@@ -39,7 +39,7 @@ Pour configurer votre application, vous devez définir certaines variables d'env
 2. Connectez-vous en tant qu'administrateur pour gérer les promotions.
 3. Explorez les promotions en cours et les produits disponibles.
 
-## Captures d'écran
+## Accéder à la console d'admniistration des produits depuis le logo de Mercadona
 
 ![Accueil](https://github.com/krima95/Mercadona/assets/16536957/712a0219-5201-40cd-8f6a-b879cbce3e10)
 
